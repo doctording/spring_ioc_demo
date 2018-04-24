@@ -172,6 +172,5 @@ MoAttack 与 LiuDeHua 实现了解耦，即 MoAttack 不需要关注 角色 Geli
 ----
 
 参考
-作者：Acrash
-《谈谈对Spring IOC的理解》
-https://blog.csdn.net/qq_22654611/article/details/52606960/
+作者：jinnianshilongnian
+http://jinnianshilongnian.iteye.com/blog/1413846
