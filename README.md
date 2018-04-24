@@ -1,6 +1,6 @@
 主要是理解Spring IOC( Inversion of Control)/DI(Dependency Injection)
 
-ioc: 
+ioc的优点
 
 资源不由资源的使用者管理，而由不使用资源的第三方管理，这可以带来很多好处。
 * 第一，资源集中管理，实现资源的可配置和易管理。
@@ -172,5 +172,9 @@ MoAttack 与 LiuDeHua 实现了解耦，即 MoAttack 不需要关注 角色 Geli
 ----
 
 参考
+
 作者：jinnianshilongnian
 http://jinnianshilongnian.iteye.com/blog/1413846
+
+谈谈对Spring IOC的理解
+https://blog.csdn.net/qq_22654611/article/details/52606960/
