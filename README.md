@@ -131,30 +131,30 @@ public class MoAttack implements ActorArrangable{
 	}
 	
 	public void cityGateAsk() {  
-        geli.responseAsk("墨者革离");  
-    }  
+        	geli.responseAsk("墨者革离");  
+    	}  
 }
 
 public class Director {
 	
 	public void direct(){  
-        // 1 指定角色的扮演者  
-       Geli geli = new LiuDeHua();    
-  
-        // 2 注入具体扮演者
-       MoAttack moAttack = new MoAttack();
-       moAttack.injectGeli(geli);
-       
-       // 3 人物剧本执行
-       moAttack.cityGateAsk();
-   }  
+		// 1 指定角色的扮演者  
+	       Geli geli = new LiuDeHua();    
+
+		// 2 注入具体扮演者
+	       MoAttack moAttack = new MoAttack();
+	       moAttack.injectGeli(geli);
+
+	       // 3 人物剧本执行
+	       moAttack.cityGateAsk();
+   	}  
 	
 }
 ```
 
-MoAttack 与 LiuDeHua 实现了解耦，即 MoAttack 不需要关注 角色 Geli 的实现类的实例化工作，实现好自己的逻辑就行了，但是这些实例化工作仍然存在，只是交给了 Director 类。
+MoAttack 与 LiuDeHua 实现了解耦，即 MoAttack 不需要关注 角色 Geli 的实现类的实例化工作，实现好自己的逻辑就行了，但是这些实例化工作仍然存在，只是交给了 Director 类。(Inversion of Control, 控制反转)
 
-加入一个制品人在选定剧本后，想通过第三方机构确定 演员，导演（导演可以选择），能够实现 剧本，演员，导演，三者的全部解耦。
+加入一个制片人在选定剧本后，想通过第三方机构确定:演员，导演（导演也可以选择），能够实现 剧本，演员，导演，三者的全部解耦。
 
 ----
 
